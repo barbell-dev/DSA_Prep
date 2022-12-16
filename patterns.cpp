@@ -225,7 +225,22 @@ void pattern_18(){
         cout<<endl;
     }
 }
+void pattern_19(){
+    //D has an ASCII value of 68.
+    cout<<"Enter n : ";
+    int n;
+    cin>>n;
+    cout<<endl;
+    char ch = 'D';
+    for(int i=0;i<n;i++){
+        for(int j=68-i;j<=68;j++){
+            cout<<char(j)<<" ";
+        }
+        cout<<endl;
+    
+}
+}
 int main(){
-    pattern_18();
+    pattern_19();
     return 1;
 }
