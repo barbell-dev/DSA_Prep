@@ -240,7 +240,220 @@ void pattern_19(){
     
 }
 }
+void pattern_20(){
+    cout<<"Enter n : ";
+    int n;
+    cin>>n;
+    cout<<endl;
+    for(int i=1;i<=n;i++){
+        for(int j=i;j<=i+2;j++){
+            cout<<char(j-1+'A')<<" ";
+        }
+        cout<<endl;
+    }
+}
+void pattern_21(){
+    cout<<"Enter n : ";
+    int n;
+    cin>>n;
+    //cout<<endl;
+    for(int i=1;i<=n;i++){
+        int j=1;
+        while(j<=n-i){
+            cout<<" ";
+            j++;
+        }
+        while(j<=n){
+            cout<<"*";
+            j++;
+        }
+        cout<<endl;
+    }
+}
+void pattern_22(){
+    cout<<"Enter n : ";
+    int n;
+    cin>>n;
+    //cout<<endl;
+    for(int i=0;i<n;i++){
+        int j=0;
+        while(j<n-i){
+            cout<<"*";
+            j++;
+        }
+        while(j<n){
+            cout<<" ";
+            j++;
+        }
+        cout<<endl;
+    }
+}
+void pattern_23(){
+    cout<<"Enter n : ";
+    int n;
+    cin>>n;
+    //cout<<endl;
+    for(int i=0;i<n;i++){
+        int j=0;
+        while(j!=i){
+            cout<<" ";
+            j++;
+        }
+        while(j<n){
+            cout<<"*";
+            j++;
+        }
+        cout<<endl;
+    }
+}
+void pattern_24(){
+    cout<<"Enter n : ";
+    int n;
+    cin>>n;
+    //cout<<endl;
+    for(int i=1;i<=n;i++){
+        int j=1;
+        while(j<i){
+            cout<<" ";
+            j++;
+        }
+        while(j<=n){
+            cout<<i;
+            j++;
+        }
+        cout<<endl;
+    }
+}
+void pattern_25(){
+    cout<<"Enter n : ";
+    int n;
+    cin>>n;
+    cout<<endl;
+    for(int i=1;i<=n;i++){
+        int j = 1;
+        while(j<=n-i){
+            cout<<" ";
+            j++;
+        }
+        while(j<=n){
+            cout<<i;
+            j++;
+        }
+        cout<<endl;
+    }
+    
+}
+void pattern_26(){
+    cout<<"Enter n : ";
+    int n;
+    cin>>n;
+    cout<<endl;
+    for(int i=1;i<=n;i++){
+        for(int k=1;k<i;k++){
+            cout<<" ";
+        }
+        for(int j=i;j<=n;j++){
+            cout<<j;
+        }
+        cout<<endl;
+    }
+}
+void pattern_27(){
+    cout<<"Enter n : ";
+    int n;
+    cin>>n;
+    cout<<endl;
+    int num = 1;
+    for(int i=1;i<=n;i++){
+        int j=1;
+        while(j<=n-i){
+            cout<<" ";
+            j++;
+        }
+        while(j<=n){
+            cout<<num<<" ";
+            num++;
+            j++;
+        }
+        cout<<endl;
+    }
+}
+void pattern_28(){
+    cout<<"Enter n : ";
+    int n;
+    cin>>n;
+    cout<<endl;
+    int num = 1;
+    for(int i=1;i<=n;i++){
+        int j=1;
+        while(j<=n-i){
+            cout<<" ";
+            j++;
+        }
+        while(j<=n){
+            cout<<num;
+            num++;
+            j++;
+        }
+        cout<<endl;
+    }
+}
+void pattern_29(){
+    cout<<"Enter n : ";
+    int n;
+    cin>>n;
+    cout<<endl;
+    for(int i=1;i<=n;i++){
+        int num = i;
+        while(num<n){
+            cout<<" ";
+            num++;
+        }
+        int start = 1;
+        while(start<=i){
+            cout<<start;
+            start++;
+        }
+        int end = start-2;
+        
+        while(end>=1){
+            
+            cout<<end;
+            end--;
+        }
+        //This below comented code is not mandatory because the spaces after decrementing the number from i are not necessary.
+        /*while(end<i){
+            cout<<" ";
+            end++;
+        }*/  
+        cout<<endl;
+    }
+}
+void pattern_30(){
+    cout<<"Enter n : ";
+    int n;
+    cin>>n;
+    cout<<endl;
+    for(int i=0;i<n;i++){
+        int j=1;
+        while(j<=n-i){
+            cout<<j;
+            j++;
+        }
+        int k=1;
+        while(k<=2*i){
+            cout<<"*";
+            k++;
+        }
+        j--;
+        while(j>=1){
+            cout<<j;
+            j--;
+        }
+        cout<<endl;
+    }
+}
 int main(){
-    pattern_19();
+    pattern_30();
     return 1;
 }
